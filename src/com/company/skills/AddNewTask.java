@@ -10,11 +10,14 @@ public class AddNewTask extends Skill {
 
     @Override
     public void action(String[] args) {
-        if (args.length < 2) {
+        Task task = null;
+        try {
+            task = new Task(args[1]);
+        } catch (ArrayIndexOutOfBoundsException ex) {
             System.out.println("Nem lehetséges új feladat hozzáadása: nincs megadva a feladat!");
             return;
         }
-        tasks.getTasks().add(new Task(args[1]));
+        tasks.getTasks().add(task);
         tasks.writeToDatabase();
         System.out.println("Feladat a listához adva");
     }

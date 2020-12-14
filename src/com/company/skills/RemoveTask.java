@@ -1,6 +1,6 @@
 package com.company.skills;
 
-public class RemoveTask extends Skill {
+public class RemoveTask extends IndexBasedSkill {
     public RemoveTask() {
         command = "-r";
         description = "Eltávolít egy feladatot";

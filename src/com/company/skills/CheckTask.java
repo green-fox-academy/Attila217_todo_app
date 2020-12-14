@@ -1,6 +1,8 @@
 package com.company.skills;
 
-public class CheckTask extends Skill {
+import com.company.Task;
+
+public class CheckTask extends IndexBasedSkill {
     public CheckTask() {
         command = "-c";
         description = "Teljesít egy feladatot";
@@ -8,6 +10,8 @@ public class CheckTask extends Skill {
 
     @Override
     public void action(String[] args) {
+        Task task = this.getTask(args);
+        if (task == null) return;
 
     }
 }
