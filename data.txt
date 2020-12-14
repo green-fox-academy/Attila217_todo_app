@@ -1,0 +1,8 @@
+false
+Kutyát sétáltatni
+true
+Tejet venni
+false
+Megcsinálni a leckét
+false
+Megetetni a papagájt
