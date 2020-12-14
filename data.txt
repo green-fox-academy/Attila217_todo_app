@@ -1,6 +1,0 @@
-false
-Kutyát sétáltatni
-true
-Tejet venni
-false
-Megcsinálni a leckét
