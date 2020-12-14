@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tasks {
-    private Path path;
+    private final Path path;
     private ArrayList<Task> tasks;
 
     public Tasks() {
